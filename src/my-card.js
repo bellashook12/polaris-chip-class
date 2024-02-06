@@ -131,7 +131,7 @@ export class MyCard extends LitElement {
   static get properties() {
     return {
       title: { type: String },
-      image: { type: String },
+      image: { type: String, reflect: true }, //updates the image so it changes with the duplicate 
       bodyText: { type: String },
       link: { type: String },
       borderColor: { type: String },
